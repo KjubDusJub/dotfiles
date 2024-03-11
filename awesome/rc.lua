@@ -393,7 +393,7 @@ client.connect_signal("request::default_mousebindings", function()
         awful.button({ }, 1, function (c)
             c:activate { context = "mouse_click" }
         end),
-        awful.button({ modkey }, 1, function (c)
+        awful.button({ modkey }, 1, function (c)ArchWiki
             c:activate { context = "mouse_click", action = "mouse_move"  }
         end),
         awful.button({ modkey }, 3, function (c)
@@ -574,7 +574,7 @@ end)
 awful.spawn.with_shell("xrandr --output HDMI-0 --mode 2560x1440 --rate 144.00 --primary --output HDMI-1 --left-of HDMI-0 --mode 1920x1080 --rate 144.00")
 awful.spawn.with_shell("setxkbmap no")
 awful.spawn.with_shell("picom -b --config /home/jonas/.config/picom.conf --backend glx")
-awful.spawn("/usr/lib/polkit-kde-authentication-agent-1")
+awful.spawn.with_shell("/usr/lib/polkit-kde-authentication-agent-1")
 
 --screencap
 
