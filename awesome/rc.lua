@@ -39,7 +39,7 @@ beautiful.init(gears.filesystem.get_configuration_dir() .. "mythemes/jtheme.lua"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
-editor = "code"
+editor = "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
