@@ -1,0 +1,49 @@
+{
+  "modules": [
+    {
+      "type":"title",
+      "outputColor":"magenta",
+      "format":"{1}@{2}"
+    },
+    {
+      "key":"dst",
+      "type":"os",
+      "name":"os",
+      "format":"{2}"
+    },
+    {
+
+      "key":"krl",
+      "type": "kernel",
+      "format": "{1} {2}"
+    },
+    {
+    
+      "key":"upt",
+     "type":"uptime",
+      "format":"{1}d {2}h {3}m {4}s"
+    },
+    {
+      
+      "key":"gpu",
+      "type": "gpu",
+      "format": "{1} {2} ({3})"
+    },
+    {
+ 
+      "key":"cpu",
+      "type": "cpu",
+      "format": "{1}"
+    },
+    {
+      "type":"memory",
+      "key":"mem",
+      "format": "{1}/{2}"
+    }
+    
+  ],
+  "logo": {
+    "type":"small",
+    "color": {"1": "magenta"}
+  }
+}
